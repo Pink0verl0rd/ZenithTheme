@@ -17,5 +17,5 @@
     <title>Wordpress Theme</title>
 </head>
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
+<?php if (function_exists('wp_body_open')) { wp_body_open(); }?>
 <header>This is the Header</header>
