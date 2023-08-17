@@ -24,5 +24,19 @@ class ZENITH_THEME {
          * Actions
          */ 
         
+
+        add_action('after_setup_theme', [$this, 'setup_theme']);
+    }
+
+    public function setup_theme(){
+        add_theme_support('title-tag'); // Expects WordPress to provide the title tag instead
+        add_theme_support('custom-logo', [
+            'height'               => 100,
+            'width'                => 400,
+            'flex-height'          => true,
+            'flex-width'           => true,
+            'header-text'          => [ 'site-title', 'site-description' ],
+            'unlink-homepage-logo' => true, 
+        ]); // Expects WordPress to provide the title tag instead
     }
 }
