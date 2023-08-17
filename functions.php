@@ -13,6 +13,12 @@ if ( !defined( 'ZENITH_DIR_PATH' ) ) {
 // Include
 require_once ZENITH_DIR_PATH . '/inc/helpers/autoloader.php';
 
+function zenith_get_theme_instance(){
+    \ZENITH_THEME\Inc\ZENITH_THEME::get_instance();
+}
+
+zenith_get_theme_instance();
+
 function zenith_enqueue_scripts(){
 
     // Register Styles
