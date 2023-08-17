@@ -5,6 +5,14 @@
  * @package Zenith
  */
 
+// Define Const
+if ( !defined( 'ZENITH_DIR_PATH' ) ) {
+    define( 'ZENITH_DIR_PATH', untrailingslashit(get_template_directory()));
+}
+
+// Include
+require_once ZENITH_DIR_PATH . '/inc/helpers/autoloader.php';
+
 function zenith_enqueue_scripts(){
 
     // Register Styles
