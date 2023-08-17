@@ -1,4 +1,9 @@
-<?php 
+<?php
+/**
+ * Singleton traits file for the theme.
+ *
+ * @package ZENITH
+ */
 
 namespace ZENITH_THEME\Inc\Traits;
 
