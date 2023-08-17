@@ -16,6 +16,7 @@ class ZENITH_THEME {
     protected function __construct(){
         // Load Classes
         Assets::get_instance();
+        Menus::get_instance();
         $this->set_hooks();
     }
     protected function set_hooks(){
