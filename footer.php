@@ -7,7 +7,9 @@
 ?>
 
 
-<footer>This is the Footer</footer>
+<div class=container>
+    <footer>This is the Footer</footer>
+</div>
 
 </div>
 </div>
