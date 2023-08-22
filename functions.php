@@ -16,6 +16,7 @@ if ( !defined( 'ZENITH_URI_PATH' ) ) {
 
 // Include Auto Loader
 require_once ZENITH_DIR_PATH . '/inc/helpers/autoloader.php';
+require_once ZENITH_DIR_PATH . '/inc/helpers/template-tags.php';
 
 // Create new instance of the main theme class
 function zenith_get_theme_instance(){
