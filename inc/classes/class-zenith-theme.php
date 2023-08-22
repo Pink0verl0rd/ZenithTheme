@@ -62,6 +62,8 @@ class ZENITH_THEME {
         add_theme_support('wp-block-styles');
         add_theme_support('align-wide');
 
+        add_image_size( 'featured-thumbnail', 350, 233, true);
+
         // Max width will be set all over the place 
         global $content_width;
         if ( !isset($content_width)){
