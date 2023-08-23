@@ -8,11 +8,13 @@
 
 $the_post_id = get_the_ID();
 $has_post_thumbnail = get_the_post_thumbnail($the_post_id);
+$hide_title = get_post_meta($the_post_id,'_hide_page_title', true); 
+echo $hide_title . ' ' . $the_post_id;
 ?>
 
 <header>
     <?php
-
+    /*
     if ($has_post_thumbnail){
         ?>
         <div class="entry-image mb-3">
@@ -26,6 +28,6 @@ $has_post_thumbnail = get_the_post_thumbnail($the_post_id);
             </a>
         </div>
         <?php
-    }
+    }*/
     ?>
 </header>
