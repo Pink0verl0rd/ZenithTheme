@@ -30,5 +30,6 @@
     else {
         zenith_the_excerpt(200);
     }
+    echo zenith_excerpt_more();
     ?>
 </div>

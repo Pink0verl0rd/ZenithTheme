@@ -80,3 +80,13 @@ function zenith_the_excerpt($trim_character_count = 0) {
 
     echo $excerpt . ' [...]';
 }
+
+function zenith_excerpt_more ( $more = '' ) {
+    if ( ! is_single() ) {
+        $more = sprintf( '<br /><button class="mt-4 btn btn-info"><a class="zenith-read-more text-white" href="%1$s">%2$s</a></button>', 
+            get_permalink( get_the_ID() ),
+            __('Read more', 'zenith')
+        );
+    }
+    return $more;
+}
