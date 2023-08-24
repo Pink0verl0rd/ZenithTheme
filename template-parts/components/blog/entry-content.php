@@ -26,6 +26,10 @@
                 the_title( '<span class="screen-reader-text">"', '"</span>',false)
             )
         );
+        wp_link_pages( [
+            'before'      		=> '<div class="page-links-zenith">' . esc_html__('Pages:','zenith'),
+            'after'       		=> '</div>',
+        ] );    
     }
     else {
         zenith_the_excerpt(200);
